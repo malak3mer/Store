@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hardware - Angry Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Additional styles for hardware page if needed */
+    .hardware-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .hardware-feature i {
+      color: #3CB5CD;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo-link">
+        <img class="logo" src="img/ggdrehbgders.png" alt="Angry Store Logo" />
+      </a>
+      <nav class="nav-links">
+        <a href="angrystore.html"><i class="fas fa-home"></i> Home</a>
+        <a href="games.html"><i class="fas fa-gamepad"></i> Games</a>
+        <a href="services.html"><i class="fas fa-headset"></i> Services</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="software.html"><i class="fas fa-microchip"></i> Software</a>
+        <a href="hardware.html" class="active"><i class="fas fa-desktop"></i> Hardware</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-secondary"><i class="fas fa-user"></i> Sign In</button>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <nav class="mobile-nav">
+      <a href="angrystore.html"><i class="fas fa-home"></i> Home</a>
+      <a href="games.html"><i class="fas fa-gamepad"></i> Games</a>
+      <a href="services.html"><i class="fas fa-headset"></i> Services</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="software.html"><i class="fas fa-microchip"></i> Software</a>
+      <a href="hardware.html"><i class="fas fa-desktop"></i> Hardware</a>
+      <button class="btn btn-primary mobile-signin"><i class="fas fa-user"></i> Sign In</button>
+    </nav>
+  </div>
+
+  <!-- HERO SECTION for Hardware Page -->
+  <section class="hero hero-secondary">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-subtitle">Powerful Gaming Rigs</span>
+        <h1 class="hero-title">Discover Top-Tier Hardware!</h1>
+        <p class="hero-desc">
+          Browse our wide selection of the latest computer components and gaming hardware.
+          Get ready to experience your favorite games with the highest performance.
+        </p>
+        <!-- Search bar specific to the hardware page -->
+        <form class="search-form" id="hardwareSearchForm">
+          <input
+            type="text"
+            class="search-input"
+            id="hardwareSearchInput"
+            placeholder="Search by component name or category..."
+          />
+          <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+      <div class="hero-image">
+        <img
+          src="img/3940304b536796dcc176aa83203a3955.png"
+          alt="PC Hardware Collection"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL HARDWARE SECTION -->
+  <section class="all-games-section trending">
+    <div class="container">
+      <div class="trending-header">
+        <span class="trending-label">Product Showcase</span>
+        <h2 class="trending-title">All Available Hardware</h2>
+      </div>
+      <div class="trending-games" id="hardwareCardsContainer">
+        
+        <!-- Hardware Card 1 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img src="img/T-DAGGER Bora T-TGK313 Rainbow Gaming Mechanical Keyboard BLUE SWITCH-250x250.jpg" alt="T-TGK313" />
+            <div class="game-category">Keyboard</div>
+          </div>
+          <div class="game-details">
+            <h3 class="game-title">T-TGK313 Gaming Keyboard</h3>
+            <div class="hardware-features">
+              <div class="hardware-feature"><i class="fa-solid fa-toggle-on"></i> BLUE SWITCH</div>
+              <div class="hardware-feature"><i class="fa-solid fa-palette"></i>  RAINBOW LED</div>
+            </div>
+            <div class="game-info">
+              <div class="game-price">839 EGP</div>
+              <a href="https://wa.me/+201507875527" target="_blank" class="btn buy-btn">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 2 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img src="img/cpu.png" alt="AMD Ryzen 9 Processor" />
+            <div class="game-category">Processors</div>
+          </div>
+          <div class="game-details">
+            <h3 class="game-title">AMD Ryzen 9 7950X</h3>
+            <div class="hardware-features">
+              <div class="hardware-feature"><i class="fas fa-tachometer-alt"></i> Speed: 4.5GHz</div>
+              <div class="hardware-feature"><i class="fas fa-microchip"></i> Cores: 16 Cores</div>
+            </div>
+            <div class="game-info">
+              <div class="game-price">15,800 EGP</div>
+              <a href="https://wa.me/+201507875527" target="_blank" class="btn buy-btn">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 3 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img src="img/ram.png" alt="RAM Memory" />
+            <div class="game-category">Memory</div>
+          </div>
+          <div class="game-details">
+            <h3 class="game-title">Corsair Vengeance 32GB</h3>
+            <div class="hardware-features">
+              <div class="hardware-feature"><i class="fas fa-tachometer-alt"></i> Speed: 3600MHz</div>
+              <div class="hardware-feature"><i class="fas fa-bolt"></i> Latency: CL18</div>
+            </div>
+            <div class="game-info">
+              <div class="game-price">3,200 EGP</div>
+              <a href="https://wa.me/+201507875527" target="_blank" class="btn buy-btn">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 4 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img src="img/ssd.png" alt="SSD" />
+            <div class="game-category">Storage</div>
+          </div>
+          <div class="game-details">
+            <h3 class="game-title">Samsung 980 Pro 2TB</h3>
+            <div class="hardware-features">
+              <div class="hardware-feature"><i class="fas fa-hdd"></i> Capacity: 2TB</div>
+              <div class="hardware-feature"><i class="fas fa-bolt"></i> Speed: 7000MB/s</div>
+            </div>
+            <div class="game-info">
+              <div class="game-price">4,800 EGP</div>
+              <a href="https://wa.me/+201507875527" target="_blank" class="btn buy-btn">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 5 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img src="img/motherboard.png" alt="Motherboard" />
+            <div class="game-category">Motherboards</div>
+          </div>
+          <div class="game-details">
+            <h3 class="game-title">ASUS ROG Strix Z790-E</h3>
+            <div class="hardware-features">
+              <div class="hardware-feature"><i class="fas fa-microchip"></i> Socket: LGA 1700</div>
+              <div class="hardware-feature"><i class="fas fa-plug"></i> Ports: PCIe 5.0</div>
+            </div>
+            <div class="game-info">
+              <div class="game-price">9,500 EGP</div>
+              <a href="https://wa.me/+201507875527" target="_blank" class="btn buy-btn">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 6 -->
+        <div class="game-card">
+          <div class="game-image">
+            <img src="img/psu.png" alt="Power Supply" />
+            <div class="game-category">Power Supplies</div>
+          </div>
+          <div class="game-details">
+            <h3 class="game-title">Corsair RM850x 80+ Gold</h3>
+            <div class="hardware-features">
+              <div class="hardware-feature"><i class="fas fa-bolt"></i> Wattage: 850W</div>
+              <div class="hardware-feature"><i class="fas fa-certificate"></i> Efficiency: 80+ Gold</div>
+            </div>
+            <div class="game-info">
+              <div class="game-price">5,900 EGP</div>
+              <a href="https://wa.me/+201507875527" target="_blank" class="btn buy-btn">Buy</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more hardware cards here with the same structure -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Angry Store. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/+201507875527"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+      document.body.classList.toggle('mobile-menu-open');
+    });
+
+    // Hardware Search Functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('hardwareSearchInput');
+      const hardwareCardsContainer = document.getElementById('hardwareCardsContainer');
+      const hardwareCards = hardwareCardsContainer.getElementsByClassName('game-card');
+
+      searchInput.addEventListener('keyup', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        for (let i = 0; i < hardwareCards.length; i++) {
+          const card = hardwareCards[i];
+          const title = card.querySelector('.game-title').textContent.toLowerCase();
+          const category = card.querySelector('.game-category').textContent.toLowerCase();
+
+          if (title.includes(searchTerm) || category.includes(searchTerm)) {
+            card.style.display = ''; // Show the card
+          } else {
+            card.style.display = 'none'; // Hide the card
+          }
+        }
+      });
+      
+      // Prevent form submission when pressing enter in search input
+      document.getElementById('hardwareSearchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+      });
+    });
+  </script>
+</body>
+</html>
